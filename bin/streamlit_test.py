@@ -1,5 +1,6 @@
 import os
 import subprocess
+import shutil
 import streamlit as st
 import zipfile
 from pytubefix import YouTube
@@ -9,6 +10,15 @@ from pathlib import Path
 
 # pip install --upgrade pytubefix
 
+SAVE = './'
+if os.path.exists('./test.mp4'):
+    os.remove('./test.mp4')
+
+if os.path.exists('./test.wav'):
+    os.remove('./test.wav')
+
+if os.path.exists('./htdemucs/test'):
+    shutil.rmtree('./htdemucs/test')
 
 def download_video(url):
     # YouTube 객체 생성

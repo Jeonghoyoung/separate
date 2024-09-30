@@ -6,4 +6,4 @@ def separate_audio(input_path, save):
 
 
 if __name__ == '__main__':
-    separate_audio('./queen.wav', './')
+    separate_audio('./test.wav', './')
