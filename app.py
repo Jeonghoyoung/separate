@@ -9,6 +9,7 @@ from pathlib import Path
 
 
 # pip install --upgrade pytubefix
+subprocess.run(["pip", "install", "--upgrade", "pytubefix"], check=True)
 
 SAVE = './'
 if os.path.exists('./test.mp4'):
