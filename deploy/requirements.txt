@@ -1,0 +1,11 @@
+Flask==3.0.0
+flask-cors==4.0.0
+Werkzeug==3.0.1
+demucs==4.0.1
+pytubefix==1.16.4
+numpy==1.24.3
+soundfile==0.12.1
+librosa==0.10.1
+torch==2.1.0  # demucs 의존성
+torchaudio==2.1.0  # demucs 의존성
+ffmpeg-python==0.2.0  # 오디오 처리 의존성
