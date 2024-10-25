@@ -26,6 +26,7 @@ def download_video(url):
     yt = YouTube(url, on_progress_callback=on_progress)
     # 최고 해상도 스트림 다운로드
     ys = yt.streams.get_highest_resolution()
+
     ys.download(filename='test.mp4')
     return 'test.mp4'
 
